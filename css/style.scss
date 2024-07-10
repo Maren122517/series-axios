@@ -1,0 +1,135 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+
+    &,
+    .serie-card,
+    input,
+    button {
+        font-family: "Rubik", sans-serif;
+    }
+}
+
+header {
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin: 0;
+        margin-left: 10px;
+        font-weight: 600;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+}
+
+.container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: rgb(0, 204, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    color: #000;
+}
+
+.gridSerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.serie-card {
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all .50s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-13px);
+    }
+
+    .serie-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 7px;
+        flex-direction: column;
+    }
+
+    .serie-name {
+        font-size: 1.5em;
+        color: #ffffff;
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    .serie-genres {
+        display: flex;
+    }
+
+    .serie-genre {
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin: 5px 5px 5px 0;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        background-color: rgb(245, 8, 8);
+    }
+
+    .serie-platform {
+        font-size: 1.5em;
+        color: #ffffff;
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    .serie-image-container {
+        padding: 10px;
+        flex-shrink: 0;
+    }
+
+    .serie-image {
+        width: 95px;
+        height: 95px;
+    }
+}
